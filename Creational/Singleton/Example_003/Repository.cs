@@ -8,6 +8,6 @@ public class Repository
     public Repository(IDatabase database) => 
         _database = database;
 
-    public int Sum(IEnumerable<string> keys) =>
-        _database.Sum(keys);
+    public int Sum(IEnumerable<string> keys) => _database.Sum(keys);
+    public double Avg(IEnumerable<string> keys) => _database.Avg(keys);
 }
